@@ -1,6 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>/2025/07/21/Pygame%20of%20Python/</url>
+    <content><![CDATA[<h1 id="Pygame-of-Python"><a href="#Pygame-of-Python" class="headerlink" title="Pygame of Python"></a>Pygame of Python</h1><p>pygame 2.6.1 (SDL 2.28.4, Python 3.13.5)</p>
+<h2 id="pygame"><a href="#pygame" class="headerlink" title="pygame"></a>pygame</h2><p><em>the top level pygame package</em></p>
+<h3 id="pygame-init"><a href="#pygame-init" class="headerlink" title="pygame.init()"></a>pygame.init()</h3><p><code>init() -&gt; (numpass, numfail)</code></p>
+<p><em>initialize all imported pygame modules</em></p>
+<p>初始化所有导入的pygame模块，如果有模块异常，不会引发exception，而是计入初始化失败总数numfail</p>
+<h3 id="pygame-quit"><a href="#pygame-quit" class="headerlink" title="pygame.quit()"></a>pygame.quit()</h3><p><code>quit() -&gt; None</code></p>
+<p><em>uninitialize all pygame modules</em></p>
+<p>取消初始化之前已初始化的所有pygame模块。python解释器关闭时，自动会调用该方法，一般不必显示调用</p>
+<h3 id="pygame-error"><a href="#pygame-error" class="headerlink" title="pygame.error"></a>pygame.error</h3><p><em>standard pygame exception</em></p>
+<p>可以通过 try - except - else 模块来显示异常消息</p>
+<h3 id="pygame-encode-string"><a href="#pygame-encode-string" class="headerlink" title="pygame.encode_string()"></a>pygame.encode_string()</h3><p><code>encode_string([obj [, encoding [, errors [, etype]]]]) -&gt; bytes or None</code></p>
+<p><em>Encode a Unicode or bytes object</em></p>
+<ul>
+<li>obj: 如果提供的是 Unicode 字符，则编码；如果是bytes对象，则保持不变；如果是其他的，返回None；如果不提供参数，引发SyntaxError</li>
+<li>encoding(string): 可选的参数，选择编码格式，默认为’unicode_escape’</li>
+<li>errors(string): 可选的参数，选择处理不可编码的字符方式，默认为’backslashreplace’</li>
+<li>etype(exception type): 可选的参数，选择触发的异常类型，默认为’UnicodeEncodeError’</li>
+</ul>
+<p>这个函数被用来编码文件路径，可以传递关键字参数</p>
+<h2 id="pygame-display"><a href="#pygame-display" class="headerlink" title="pygame.display"></a>pygame.display</h2><p><em>pygame module to control the display window and screen</em></p>
+<h3 id="init"><a href="#init" class="headerlink" title="init()"></a>init()</h3><p><code>init() -&gt; None</code></p>
+<p><em>Initialize the display module</em></p>
+<h3 id="quit"><a href="#quit" class="headerlink" title="quit()"></a>quit()</h3><p><code>quit() -&gt; None</code></p>
+<p><em>Uninitialize the display module</em></p>
+<h3 id="set-mode"><a href="#set-mode" class="headerlink" title="set_mode()"></a>set_mode()</h3><p><code>set_mode(size=(0, 0), flags=0, depth=0, display=0, vsync=0) -&gt; Surface</code></p>
+<p><em>Initialize a window or screen for display</em></p>
+<ul>
+<li>size参数接受一组表示width和height的元组，如果不传递size实参，或者size实参任意某个数为0，则被创建的Surface对象中相应的width&#x2F;height会和当前屏幕有相同的大小</li>
+<li>flags参数</li>
+<li>depth参数代表采用多少位表示的颜色，即颜色深度（通常可以8位、16位、24位–rgb、32位–rgba）；通常最好不需要传递depth参数，它将默认为适合系统的最佳和最快的颜色深度</li>
+<li>display参数</li>
+<li>vsync参数</li>
+<li>调用这个函数会隐式初始化pygame.display模块</li>
+<li></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2025/07/17/AI%E6%8F%90%E7%A4%BA%E8%AF%8D/</url>
+    <content><![CDATA[<h1 id="AI提示词"><a href="#AI提示词" class="headerlink" title="AI提示词"></a>AI提示词</h1><h2 id="项目策划参谋长"><a href="#项目策划参谋长" class="headerlink" title="项目策划参谋长"></a>项目策划参谋长</h2><h3 id="角色"><a href="#角色" class="headerlink" title="角色"></a>角色</h3><p>你是经验丰富、逻辑严谨的“项目策划参谋长”,能用通俗语言指导新手,高效解决规划难题。善于聆听用户具体需<br>求,引导、反馈能力强,且风险意识突出。责任心强,考虑周到,方法论实用,流程规范,鼓励创新,能提供多元解<br>决方案。沟通风格友好、耐心,有条理且高效,回答简明扼要,用户需要时可详细展开,还善于总结、归纳、分步骤</p>
+<p>拆解问题。</p>
+<h3 id="技能"><a href="#技能" class="headerlink" title="技能"></a>技能</h3><h4 id="技能-1-应对用户起步困难"><a href="#技能-1-应对用户起步困难" class="headerlink" title="技能 1:应对用户起步困难"></a>技能 1:应对用户起步困难</h4><ol>
+<li><p>当用户表示不知如何开展项目策划时,询问项目的基础信息(类型、目标、周期等)</p>
+</li>
+<li><p>简单梳理基本流程步骤,提供进阶建议。</p>
+</li>
+<li><p>主动提供可用模板&#x2F;资料。</p>
+</li>
+</ol>
+<p>回复示例:</p>
+<p>您好,我很乐意帮助您!为了更好为您制定策划方案,请您简单描述一下项目目标、主要内容和周期。一般来说,项<br>目策划分为6个关键步骤:</p>
+<p>1)目标与需求确认</p>
+<p>2)资源与团队配置</p>
+<p>3)任务分解与进度安排</p>
+<p>4)风险评估与应对</p>
+<p>5)沟通与协调机制设定</p>
+<p>6)文档输出与汇报</p>
+<p>如果需要,我可以为您生成详细流程表,或根据您的实际情况进一步细化具体的操作建议。</p>
+<h4 id="技能-2-提供模板和流程参考"><a href="#技能-2-提供模板和流程参考" class="headerlink" title="技能 2:提供模板和流程参考"></a>技能 2:提供模板和流程参考</h4><ol>
+<li><p>当用户索要项目策划书模板、流程表或任务清单时,自动根据项目类型,提供对应专业模板或范例。</p>
+</li>
+<li><p>可生成并输出可编辑的表单或流程图。<br>回复示例:<br>已为您准备好一份完整的[项目策划书模板],包括项目背景、目标、核心计划、进度甘特图、风险识别及预算等内<br>容。<br>如果您能告知更多项目细节,我可以为您量身定制专属的任务分解清单和时间规划表,是否需要现在生成?</p>
+</li>
+</ol>
+<h4 id="技能-3-处理可视化安排需求"><a href="#技能-3-处理可视化安排需求" class="headerlink" title="技能 3:处理可视化安排需求"></a>技能 3:处理可视化安排需求</h4><ol>
+<li>当用户有进度、分工、甘特图等可视化安排需求时,指导进行任务分解(WBS),或自动输出任务分配建议。<br>2.支持简单的表格式分工、时间分配。</li>
+<li>输出任务-人员-时间的可视化排布。</li>
+</ol>
+<p>回复示例:<br>为了帮助您高效安排进度和分工,可以先列出项目所有子任务,再为每项任务分配负责人及完成时限。<br>我可以帮您生成一份初步的任务-人员-时限表格(WBS清单),如有团队成员信息还可进一步细化。如果有需要,还<br>可同步输出甘特图视图,便于您跟踪项目进展。</p>
+<h4 id="技能-4-识别风险与问题"><a href="#技能-4-识别风险与问题" class="headerlink" title="技能 4: 识别风险与问题"></a>技能 4: 识别风险与问题</h4><ol>
+<li>当用户表示风险与问题识别薄弱时,列举此类项目典型风险类型及预警信号。<br>2.主动建议风险预案和缓解措施。<br>回复示例:</li>
+</ol>
+<p>常见风险包括:进度延误、预算超支、资源不足、沟通障碍等。建议在策划阶段,列出每类风险的发生可能性及影</p>
+<p>响,并制订对应的应急措施。例如:</p>
+<ul>
+<li>若进度拖延,可准备后备人力或调整优先级</li>
+<li>如预算不足,提前设立10%备用金<br>如果您提供具体项目情况,我还能为您输出智能风险清单及应对方案建议。</li>
+</ul>
+<h4 id="技能-5-满足沟通材料文档输出需求"><a href="#技能-5-满足沟通材料文档输出需求" class="headerlink" title="技能 5:满足沟通材料文档输出需求"></a>技能 5:满足沟通材料文档输出需求</h4><ol>
+<li>当用户有沟通&#x2F;材料&#x2F;文档输出需求时,支持自动生成会议纪要、简报或各类项目汇报模板。</li>
+<li>可根据输入自动生成规范格式,鼓励结构清晰表达。<br>回复示例:</li>
+</ol>
+<p>已为您生成一份标准的[项目周报模板],您只需补充各项关键进度、里程碑和目前遇到的问题。如果需要,我还可以<br>根据实际内容智能润色或归纳总结,让汇报内容更清晰有逻辑。</p>
+<h4 id="技能-6-提供决策建议"><a href="#技能-6-提供决策建议" class="headerlink" title="技能 6: 提供决策建议"></a>技能 6: 提供决策建议</h4><ol>
+<li>当用户临时遇到难题需要决策建议时,帮用户梳理问题成因,给出多方案选择。</li>
+<li>建议优先级调整、资源调配、沟通平衡等。</li>
+</ol>
+<p>回复示例:</p>
+<p>针对当前难题,建议您首先梳理产生的原因,是进度、资源还是沟通造成?<br>可以考虑:1)优化任务优先级;2)分配更多资源;3)组织团队会议、促进共识。<br>如您详细描述现状与目标,我能为您给出针对性解决建议清单。</p>
+<h4 id="通用回复自动化思路"><a href="#通用回复自动化思路" class="headerlink" title="通用回复自动化思路"></a>通用回复自动化思路</h4><ul>
+<li><p>主动收集信息(如项目类型、目标、团队规模等)</p>
+</li>
+<li><p>分步拆解复杂任务,步骤明确</p>
+</li>
+<li><p>多方案备选,鼓励用户选择适合的方案</p>
+</li>
+<li><p>可视化、模板化输出,提高用户效率</p>
+</li>
+<li><p>阶段性总结,随时引导用户下一步行动</p>
+</li>
+</ul>
+<h4 id="限制"><a href="#限制" class="headerlink" title="限制"></a>限制</h4><p>只讨论与项目策划相关的内容,拒绝回答无关话题。<br>-所输出的内容应符合逻辑和规范要求。</p>
+<p>-总结部分应简洁明了。</p>
+<h2 id="项目策划智能体"><a href="#项目策划智能体" class="headerlink" title="项目策划智能体"></a>项目策划智能体</h2><h3 id="角色-1"><a href="#角色-1" class="headerlink" title="角色"></a>角色</h3><p>项目规划专家<br>访客 30029</p>
+<p>#注意<br>1.角色设计应注重项目目标的明确性和实施的可行性。<br>2.专家设计应帮助用户高效、有序地规划项目。<br>3.使用清晰的步骤和结构来组织项目规划。</p>
+<p>#性格类型指标</p>
+<p>INTJ(内向直觉思维判断型)<br>#背景<br>项目规划专家致力于帮助用户根据项目目标和要求,制定详细、可行的项目计划,确保项目按时、按质完成。<br>#约束条件</p>
+<p>1.必须充分了解项目需求和目标。</p>
+<p>2.应考虑资源的限制和风险因素。<br>#定义<br>项目规划:指根据项目目标和要求,制定详细的项目实施计划和时间表的过程。<br>#目标</p>
+<p>1.确保项目规划紧密围绕项目目标展开。</p>
+<p>2.提供清晰、合理的项目实施计划和时间表。<br>3.考虑到所有关键因素,如资源、风险等,确保项目可行性和成功率。<br>#Skills<br>1.分析和评估能力,以确定项目的关键活动和里程碑。</p>
+<p>2.组织和计划能力,以创建逻辑性强、结构清晰的项目计划。</p>
+<p>3.风险管理意识,以识别和应对潜在的项目风险。<br>#音调<br>1.专业、客观。<br>2.清晰、直接。</p>
+<p>#价值观<br>1.追求高效和目标导向的项目管理。<br>2.重视项目规划的细节和质量。<br>#工作流程<br>第一步:与项目负责人沟通,了解项目目标、需求和限制条件。<br>第二步:分析项目需求,确定关键活动和里程碑。<br>第三步:评估资源需求和风险因素。<br>第四步:编制项目实施计划和时间表,包括每个活动的负责人和完成时限。<br>第五步:与项目负责人和相关利益相关者讨论初步计划,收集反馈。<br>第六步:根据反馈调整项目计划,确保所有关键活动得到合理安排。<br>第七步:最终确定项目计划,并与所有团队成员共享。<br>#Initialization<br>您好,作为项目规划专家,我将帮助您高效、有序地规划项目。请提供项目的基本信息,包括目标、需求和限制条<br>件,让我们开始规划吧。</p>
+<p>MJ提示词</p>
+<p>创意家</p>
+<p>logo</p>
+]]></content>
+  </entry>
+  <entry>
+    <title></title>
+    <url>/2025/07/17/Python/</url>
+    <content><![CDATA[<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h2 id="小知识"><a href="#小知识" class="headerlink" title="小知识"></a>小知识</h2><ul>
+<li><p>**Python 文件命名规则：**文件名和文件夹名最好使用小写英文字母，空格用‘_‘代替</p>
+</li>
+<li><p>**Bool：**对于数值0，空值None，’’，“”，空列表[]，空元组()，空字典{} Python都返回False   将包含重复元素的列表传入set()，可让Python去除列表中重复的元素</p>
+</li>
+<li><p>**函数参数：**位置参数和关键字参数，关键字参数：function_name(argument1&#x3D;value1, argument2&#x3D;value2) ,位置参数顺序对应每个形参，关键字实参，需要准确指出函数定义中的形参名</p>
+</li>
+<li><p>**函数：**定义函数紧跟在后面第二行的文本称为文档字符串（”””使用三个双引号”””）</p>
+</li>
+<li><p>**传递列表：**可以直接修改实参，使用列表副本可以达到不修改实参的目的</p>
+</li>
+<li><p><strong>传递任意数量实参：</strong><code>*args</code>(以<code>*</code>为标识的形参让Python生成一个元组，结合位置参数使用，放在最后)，<code>**kwargs</code>(以<code>**</code>为标识的形参让Python生成一个字典，结合关键字参数使用，放在最后)</p>
+</li>
+<li><p>**导入函数模块：**例如一个module_name.py，使用import语句import module_name后就可以通过module_name.function_name使用函数；还可以通过from module_name import function_0, function_1 语句只导入模块中特定的函数，这时只需用函数名即可调用函数；导入全部函数<code>from module_name import *</code>，这样可以不用通过<code>.</code>来调用函数</p>
+</li>
+<li><p>**别名：**为函数提供别名，语法：from module_name import function_name as fn；给模块提供别名，import module_name as mn</p>
+</li>
+<li><p>**规范：**在给形参提供默认值时，等号两边不要有空格；函数调用中的关键字实参也遵循相应规范</p>
+<p>​    当函数定义长度超过了79个字符时，可在函数定义中输入左括号后按回车键，并在下一行连按两次制表    符键</p>
+</li>
+</ul>
+<h2 id="定义变量"><a href="#定义变量" class="headerlink" title="定义变量"></a>定义变量</h2><h3 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h3><p><strong>元组</strong>（tuple）是 Python 中用逗号分隔的默认序列类型，可以像以下方式定义元组</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">size = <span class="number">640</span>, <span class="number">480</span></span><br><span class="line">size = (<span class="number">640</span>, <span class="number">480</span>)</span><br><span class="line">size = width, height = <span class="number">640</span>, <span class="number">480</span>    <span class="comment">#这种方式还可以保留分解后的部分</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="bytes类型"><a href="#bytes类型" class="headerlink" title="bytes类型"></a>bytes类型</h3><p>在 Python 中，bytes是一种用于表示字节序列的不可变数据类型，专门用于存储和操作原始的字节数据；bytes以字节为单位，每个字节由8位组成，可按以下方式定义</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#使用b前缀</span></span><br><span class="line">b1 = <span class="string">b&#x27;hello&#x27;</span></span><br><span class="line"><span class="comment">#使用bytes()构造函数，可通过整数序列或字符串创建bytes对象</span></span><br><span class="line">b2 = <span class="built_in">bytes</span>([<span class="number">65</span>, <span class="number">66</span>, <span class="number">67</span>])	 <span class="comment">#ASCII对应 A，B，C</span></span><br><span class="line"><span class="comment">#使用字符串的encode()方法，将字符串编码为指定字符集的bytes对象</span></span><br><span class="line">b3 = <span class="string">&quot;学习Python&quot;</span>.encode(<span class="string">&#x27;utf-8&#x27;</span>)</span><br><span class="line"><span class="built_in">print</span>(b3)	 <span class="comment"># 输出：b&#x27;\xe5\xad\xa6\xe4\xb9\xa0Python&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>还可通过bytes类型的decode()与字符串之间进行转换</p>
+<h2 id="类"><a href="#类" class="headerlink" title="类"></a>类</h2><h3 id="创建类"><a href="#创建类" class="headerlink" title="创建类"></a>创建类</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Dog</span>:</span><br><span class="line"></span><br><span class="line">​	<span class="string">&quot;&quot;&quot;一次模拟小狗的尝试&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">​	<span class="keyword">def</span> <span class="title function_">_init_</span>(<span class="params">self, name, age</span>):</span><br><span class="line"></span><br><span class="line">​		<span class="string">&quot;&quot;&quot;初始化属性name和age&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">​		<span class="variable language_">self</span>.name=name</span><br><span class="line"></span><br><span class="line">​		<span class="variable language_">self</span>.age=age</span><br><span class="line"></span><br><span class="line">​	<span class="keyword">def</span> <span class="title function_">sit</span>(<span class="params">self</span>):</span><br><span class="line"></span><br><span class="line">​		<span class="string">&quot;&quot;&quot;模拟坐下命令&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">​		<span class="built_in">print</span>(<span class="string">f&quot;<span class="subst">&#123;self.name&#125;</span> is now sitting.&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>类名应采用驼峰命名法，即将类名中的每个单词的首字母都大写，并且不使用下划线。实例和模块名都采用全小写格式</p>
+<h4 id="init-方法"><a href="#init-方法" class="headerlink" title="_init_()方法"></a><code>_init_()方法</code></h4><p>该方法是每个创建的类必须有的方法，必须在定义中包含形参 self ，每次根据类创建新实例时，Python都会自动运行该函数并自动传入实参 self </p>
+<h4 id="修改属性"><a href="#修改属性" class="headerlink" title="修改属性"></a>修改属性</h4><ul>
+<li>可以在<code>_init_()</code>函数体中<code>self.property= ? </code>直接增添具有默认值的属性</li>
+<li>可以直接通过类的实例访问并修改属性值</li>
+<li>可以通过定义操作属性的方法间接修改属性值</li>
+</ul>
+<h3 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Car</span>:</span><br><span class="line"></span><br><span class="line">​	<span class="string">&quot;&quot;&quot;一次模拟汽车的尝试&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">​	<span class="keyword">def</span> <span class="title function_">_init_</span>(<span class="params">self, make, model, year</span>):</span><br><span class="line"></span><br><span class="line">​		<span class="string">&quot;&quot;&quot;初始化汽车描述&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">​		<span class="variable language_">self</span>.make=make</span><br><span class="line"></span><br><span class="line">​		<span class="variable language_">self</span>.model=make</span><br><span class="line"></span><br><span class="line">​		<span class="variable language_">self</span>.year=year</span><br><span class="line"></span><br><span class="line">​		<span class="variable language_">self</span>.odometer_reading=<span class="number">0</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ElectricCar</span>(<span class="title class_ inherited__">Car</span>):</span><br><span class="line"></span><br><span class="line">​	<span class="string">&quot;&quot;&quot;电动汽车的独特之处&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">​	<span class="keyword">def</span> <span class="title function_">_init_</span>(<span class="params">self, make, model, year</span>):</span><br><span class="line"></span><br><span class="line">​		<span class="string">&quot;&quot;&quot;初始化父类的属性，在初始化电动汽车特有的属性&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">​		<span class="built_in">super</span>()._init_(make, model, year)</span><br><span class="line"></span><br><span class="line">​		<span class="variable language_">self</span>.battery_size=<span class="number">40</span></span><br></pre></td></tr></table></figure>
+
+<p><code>super()</code>是一个特殊的函数，通过该函数可以调用父类的方法</p>
+<h4 id="重写父类中的方法"><a href="#重写父类中的方法" class="headerlink" title="重写父类中的方法"></a>重写父类中的方法</h4><p>在子类中定义一个与要重写的父类方法同名的方法即可</p>
+<h3 id="组合"><a href="#组合" class="headerlink" title="组合"></a>组合</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Battery</span>:</span><br><span class="line"></span><br><span class="line">​	<span class="string">&quot;&quot;&quot;模拟电动汽车的电池&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">​	<span class="keyword">def</span> <span class="title function_">_init_</span>(<span class="params">self, battery_size=<span class="number">40</span></span>):</span><br><span class="line"></span><br><span class="line">​		<span class="string">&quot;&quot;&quot;初始化电池属性&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">​		<span class="variable language_">self</span>.battery_size=battery_size</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ElectricCar</span>(<span class="title class_ inherited__">Car</span>):</span><br><span class="line"></span><br><span class="line">​	<span class="string">&quot;&quot;&quot;电动汽车的独特之处&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">​	<span class="keyword">def</span> <span class="title function_">_init_</span>(<span class="params">self, make, model, year</span>):</span><br><span class="line"></span><br><span class="line">​		<span class="string">&quot;&quot;&quot;初始化父类的属性，在初始化电动汽车特有的属性&quot;&quot;&quot;</span></span><br><span class="line"></span><br><span class="line">​		<span class="built_in">super</span>()._init_(make, model, year)</span><br><span class="line"></span><br><span class="line">​		<span class="variable language_">self</span>.battery=Battery()</span><br></pre></td></tr></table></figure>
+
+<p>类似于C++中的“has a”关系</p>
+<h3 id="导入类"><a href="#导入类" class="headerlink" title="导入类"></a>导入类</h3><ul>
+<li><p><code>from module_name import class_name0, class_name1……</code></p>
+</li>
+<li><p><code>import module_name</code></p>
+</li>
+<li><p>和导入函数一样可以使用别名</p>
+</li>
+<li><p>不推荐使用<code>from module_name import *</code>防止重名</p>
+</li>
+</ul>
+<h2 id="文件和异常"><a href="#文件和异常" class="headerlink" title="文件和异常"></a>文件和异常</h2><h3 id="读取文件"><a href="#读取文件" class="headerlink" title="读取文件"></a>读取文件</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> pathlib <span class="keyword">import</span> Path</span><br><span class="line">path=Path(<span class="string">&#x27;file_path/filename.txt&#x27;</span>)</span><br><span class="line">content=path.read_text()</span><br><span class="line">lines=content.splitlines() <span class="comment">#使用splitlines方法将冗长的字符串存储为由文件每一行字符组成的列表</span></span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">    <span class="built_in">print</span>(line)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><code>read_text()</code>到达文件尾时会返回一个空字符串，而这个空字符串会被显示为一个空行</p>
+</li>
+<li><p>在Python中，文件路径要使用斜杠（&#x2F;）而不是反斜杠（\）</p>
+</li>
+<li><p>在读取文本文件时，Python将其中的所有文本都解释为字符串，如果要将数作为数值使用，要使用<code>int()</code>或<code>float()</code>方法</p>
+</li>
+</ul>
+<h3 id="写入文件"><a href="#写入文件" class="headerlink" title="写入文件"></a>写入文件</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#写入单行</span></span><br><span class="line"><span class="keyword">from</span> pathlib <span class="keyword">import</span> Path</span><br><span class="line">path=Path(<span class="string">&#x27;file_path/filename.txt&#x27;</span>)</span><br><span class="line">path.write_text(<span class="string">&#x27;I love programming.&#x27;</span>)</span><br><span class="line"><span class="comment">#写入多行</span></span><br><span class="line">contents = <span class="string">&quot;I love programming.\n&quot;</span></span><br><span class="line">contents += <span class="string">&quot;I love creating new games.\n&quot;</span></span><br><span class="line">contents += <span class="string">&quot;I also love working with data.\n&quot;</span></span><br><span class="line">path.write_text(contents)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Python只能将字符串写入文本文件，如果要将数值数据存储到文本文件中，必须先使用函数<code>str()</code>将其转换为字符串格式</li>
+<li>如果指定的文件已存在，<code>write_text()</code>将删除其内容，在将指定内容写入其中</li>
+</ul>
+<h3 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">	--snip--</span><br><span class="line"><span class="keyword">except</span> SomeError:</span><br><span class="line">	<span class="comment">#当try代码块触发对应错误的对象时，执行此代码块</span></span><br><span class="line">    <span class="keyword">pass</span>	<span class="comment">#pass语句实现静默失败，即什么都不做</span></span><br><span class="line">    --snip--</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	<span class="comment">#当try代码块正常执行时，执行此代码块</span></span><br><span class="line">    --snip--</span><br></pre></td></tr></table></figure>
+
+<h3 id="存储数据"><a href="#存储数据" class="headerlink" title="存储数据"></a>存储数据</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> pathlib <span class="keyword">import</span> Path</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="comment">#把数据写入文件中</span></span><br><span class="line">numbers = [<span class="number">2</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>, <span class="number">11</span>, <span class="number">13</span>]</span><br><span class="line">path = Path(<span class="string">&#x27;file_name.json&#x27;</span>)</span><br><span class="line">contents = json.dumps(numbers)</span><br><span class="line">path.write_text(contents)</span><br><span class="line"><span class="comment">#从文件中读取数据</span></span><br><span class="line">contents = path.read_text()</span><br><span class="line">numbers = json.loads(contents)</span><br><span class="line"><span class="built_in">print</span>(numbers)</span><br></pre></td></tr></table></figure>
+
+<p>模块 json 将Python数据结构转换为JSON格式的字符串</p>
+<h2 id="测试代码"><a href="#测试代码" class="headerlink" title="测试代码"></a>测试代码</h2><h3 id="使用-pip"><a href="#使用-pip" class="headerlink" title="使用 pip"></a>使用 pip</h3><ul>
+<li><p>Python提供了一款名为 pip 的工具，用来安装第三方包</p>
+</li>
+<li><p>在终端中执行 <code>python -m pip install --upgrade pip</code>可以更新 pip</p>
+</li>
+<li><p>可以使用命令 <code>python -m pip install --upgrade package_name</code>更新系统中安装的任何包</p>
+</li>
+<li><p>可以使用命令 <code>python -m pip install --user package_name</code>安装众多第三方包</p>
+<p>–user 指示标志让Python只为当前用户安装指定的包，安装pytest来测试代码</p>
+</li>
+<li><p>由于国外官方pypi经常被墙，可能在使用过程中出现timeout的问题，可以采用其他pip源</p>
+</li>
+</ul>
+<p><code>pip install -i https://pypi.tuna.tsinghua.edu.cn/simple package_name</code></p>
+<h3 id="测试函数"><a href="#测试函数" class="headerlink" title="测试函数"></a>测试函数</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># name_function.py</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">get_formatted_name</span>(<span class="params">first,last</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;生成格式规范的姓名&quot;&quot;&quot;</span></span><br><span class="line">    full_name = <span class="string">f&quot;<span class="subst">&#123;first&#125;</span> <span class="subst">&#123;last&#125;</span>&quot;</span></span><br><span class="line">    <span class="keyword">return</span> full_name.title()</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># test_name_function.py</span></span><br><span class="line"><span class="keyword">from</span> name_function <span class="keyword">import</span> get_formatted_name</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_first_last_name</span>():</span><br><span class="line">    <span class="string">&quot;&quot;&quot;能够正确处理像Janis Joplin这样的姓名吗？&quot;&quot;&quot;</span></span><br><span class="line">    formatted_name = get_formatted_name(<span class="string">&#x27;Janis&#x27;</span>, <span class="string">&#x27;Joplin&#x27;</span>)</span><br><span class="line">    <span class="keyword">assert</span> formatted_name == <span class="string">&#x27;Janis Joplin&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>测试文件名和测试函数必须以<code>test_</code>打头，因为pytest运行测试时，将查找以<code>test_</code>开头的文件，并测试其中的所有以<code>test_</code>打头的测试函数</li>
+<li>断言<code>assert</code>就是声称满足特定的条件，可以是各种条件语句</li>
+</ul>
+<h3 id="测试类"><a href="#测试类" class="headerlink" title="测试类"></a>测试类</h3><p>这通常是测试类中方法的行为</p>
+<h4 id="夹具"><a href="#夹具" class="headerlink" title="夹具"></a>夹具</h4><p>由于测试每个类中的方法都需要创建一个类的实例，比较繁琐，故使用夹具来创建供多个测试使用的资源</p>
+<ul>
+<li>在pytest中，要创建夹具，可编写一个使用装饰器@pytest.fixture装饰的函数</li>
+<li>装饰器是放在函数定义前面的指令</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pytest</span><br><span class="line"><span class="keyword">from</span> module_name <span class="keyword">import</span> class_name</span><br><span class="line"></span><br><span class="line"><span class="meta">@pytest.fixture</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">function_name</span>():</span><br><span class="line">    <span class="string">&quot;&quot;&quot;一个可供所有测试函数使用的class_name实例&quot;&quot;&quot;</span></span><br><span class="line">    --snip--  <span class="comment">#这里构造一个类的实例</span></span><br><span class="line">    <span class="keyword">return</span> class_instance</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test_class_function</span>(<span class="params">function_name</span>):</span><br><span class="line">    <span class="string">&quot;&quot;&quot;&quot;&quot;&quot;</span></span><br><span class="line">    --snip--</span><br></pre></td></tr></table></figure>
+
+<p>当测试函数的一个形参与应用了装饰器@pytest.fixture的函数（夹具）同名时，将自动运行夹具，并将夹具返回的值传递给测试函数</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2025/07/05/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
